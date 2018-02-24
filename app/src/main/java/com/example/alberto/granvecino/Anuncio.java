@@ -4,18 +4,41 @@ package com.example.alberto.granvecino;
  * Created by alberto on 16/02/2018.
  */
 
-public class Anuncio extends Persona{
+public class Anuncio {
+
+    private String trabajo;
+    private String descripcion;
+    private String anunciante;
+    private String tipo;
 
 
-    String trabajo;
-    String descripcion;
-
-    public Anuncio(String nombre, String apellidos, String edad, String trabajo, String descripcion) {
-        super(nombre, apellidos, edad);
-
+    public Anuncio(String trabajo, String descripcion, String anunciante, String tipo) {
         this.trabajo = trabajo;
         this.descripcion = descripcion;
+        this.anunciante = anunciante;
+        this.tipo = tipo;
     }
+
+
+    public String getAnunciante() {
+        return anunciante;
+    }
+
+    public void setAnunciante(String anunciante) {
+        this.anunciante = anunciante;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+
+
+
 
 
     public String getTrabajo() {

@@ -34,10 +34,10 @@ public class AdaptadorTab extends BaseAdapter {
         TextView trabajo=(TextView)vista.findViewById(R.id.trabajoTV);
         TextView desc=(TextView)vista.findViewById(R.id.descripcionTV);
 
-        nombre.setText(datos.get(position).getNombre());
-        apellidos.setText(datos.get(position).getApellidos());
+        nombre.setText(datos.get(position).getAnunciante());
+        apellidos.setText("");
         trabajo.setText(datos.get(position).getTrabajo());
-        edad.setText(datos.get(position).getEdad());
+        edad.setText("");
         desc.setText(datos.get(position).getDescripcion());
         return vista;
     }

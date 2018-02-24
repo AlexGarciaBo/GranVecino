@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "543470634377",
+    "firebase_url": "https://granvecino-e3c89.firebaseio.com",
+    "project_id": "granvecino-e3c89",
+    "storage_bucket": "granvecino-e3c89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543470634377:android:f5c89f69b6b1fc3a",
+        "android_client_info": {
+          "package_name": "com.example.alberto.granvecino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543470634377-b7nk342207ohmsft1ri87jmdqmaomesn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alberto.granvecino",
+            "certificate_hash": "52676eb16dd036b49868399093ced7a2d8b1d031"
+          }
+        },
+        {
+          "client_id": "543470634377-kb064pqc9ob0a3pe55echlik7s43s267.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlVGUQNWvNp42pd00G2p0dD0CIAGRR4ME"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543470634377-kb064pqc9ob0a3pe55echlik7s43s267.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

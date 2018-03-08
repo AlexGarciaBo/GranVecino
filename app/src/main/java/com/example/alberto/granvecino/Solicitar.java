@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -50,6 +51,10 @@ public class Solicitar extends AppCompatActivity {
                 try {
                     /* Subimos a la base de datos mediante push()*/
                     myRef.push().setValue(anuncio);
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Gracias, su peticion ha sido añadida", Toast.LENGTH_SHORT);
+                    toast.show();
+                    finish();
                 }catch(Exception e) {
                     e.printStackTrace();
                 }

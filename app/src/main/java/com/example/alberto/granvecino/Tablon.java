@@ -42,6 +42,7 @@ public class Tablon extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
                 /*Obtenemos la refencia de anuncios*/
         DatabaseReference myRef = database.getReference("Anuncios");
+        DatabaseReference myRef2 = database.getReference("Ofertas");
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -49,6 +50,26 @@ public class Tablon extends AppCompatActivity {
                 for (DataSnapshot messageSnapshot : dataSnapshot.getChildren()) {
                     String trabajo = (String) messageSnapshot.child("trabajo").getValue();
                     String anunciante = (String) messageSnapshot.child("anunciante").getValue();
+                    String descripcion = (String) messageSnapshot.child("descripcion").getValue();
+                    String tipo = (String) messageSnapshot.child("tipo").getValue();
+                    anuncios.add(new Anuncio(trabajo,descripcion,anunciante,tipo));
+                }
+
+                michica = new AdaptadorTab(context,anuncios);
+                anun.setAdapter((ListAdapter) michica);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+        myRef2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot messageSnapshot : dataSnapshot.getChildren()) {
+                    String trabajo = (String) messageSnapshot.child("trabajo").getValue();
+                    String anunciante = (String) messageSnapshot.child("user").getValue();
                     String descripcion = (String) messageSnapshot.child("descripcion").getValue();
                     String tipo = (String) messageSnapshot.child("tipo").getValue();
                     anuncios.add(new Anuncio(trabajo,descripcion,anunciante,tipo));

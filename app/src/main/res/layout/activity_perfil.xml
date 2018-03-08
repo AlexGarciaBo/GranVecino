@@ -1,48 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.alberto.granvecino.Perfil">
 
-    <TextView
-        android:id="@+id/nombreTV"
-        android:layout_width="151dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/perfil_IV"
+        android:layout_width="149dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/perfil"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="38dp" />
 
     <TextView
-        android:id="@+id/apellidosTV"
-        android:layout_width="126dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/nombreTV"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/perfil_IV"
+        android:layout_marginTop="69dp"
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/edadTV"
-        android:layout_width="53dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreTV" />
+        android:id="@+id/tvApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvNombre"
+        android:layout_marginTop="51dp"
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/trabComTV"
-        android:layout_width="72dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="36dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/edadTV"
-        app:layout_constraintTop_toBottomOf="@+id/apellidosTV" />
-</android.support.constraint.ConstraintLayout>
+        android:id="@+id/tvEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvApellidos"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="editar"
+        android:text="Editar perfil" />
+</RelativeLayout>

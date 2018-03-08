@@ -33,12 +33,14 @@ public class AdaptadorTab extends BaseAdapter {
         TextView edad=(TextView)vista.findViewById(R.id.edadTV);
         TextView trabajo=(TextView)vista.findViewById(R.id.trabajoTV);
         TextView desc=(TextView)vista.findViewById(R.id.descripcionTV);
+        TextView tipo=(TextView)vista.findViewById(R.id.TipoTV);
 
-        nombre.setText(datos.get(position).getAnunciante());
-        apellidos.setText("");
-        trabajo.setText(datos.get(position).getTrabajo());
-        edad.setText("");
-        desc.setText(datos.get(position).getDescripcion());
+        nombre.setText("Usuario: " + datos.get(position).getAnunciante());
+        tipo.setText("Tipo: " + datos.get(position).getTipo());
+        //apellidos.setText("");
+        trabajo.setText("Trabajo: " + datos.get(position).getTrabajo());
+        //edad.setText("");
+        desc.setText("Descripción: " + datos.get(position).getDescripcion());
         return vista;
     }
     @Override

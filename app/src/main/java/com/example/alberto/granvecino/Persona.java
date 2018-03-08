@@ -6,32 +6,15 @@ package com.example.alberto.granvecino;
 
 public class Persona {
 
-    String nombre;
-    String apellidos;
-    String edad;
-    int trabajosCompletados;
+    private String nombre;
+    private String apellidos;
+    private String edad;
 
 
-
-
-    public Persona(String nombre, String apellidos, String edad, int trabajosCompletados) {
+    public Persona(String nombre, String apellidos, String edad) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
-        this.trabajosCompletados = trabajosCompletados;
-
-    }
-
-    public Persona(String pepe, String perez, String s) {
-
-    }
-
-    public int getTrabajosCompletados() {
-        return trabajosCompletados;
-    }
-
-    public void setTrabajosCompletados(int trabajosCompletados) {
-        this.trabajosCompletados = trabajosCompletados;
     }
 
     public String getNombre() {

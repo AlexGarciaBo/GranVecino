@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alberto.granvecino.Perfil">
+    tools:context="com.example.alberto.granvecino.Perfil"
+    android:background="@color/fondo_azul">
 
     <ImageView
         android:id="@+id/perfil_IV"
@@ -51,5 +52,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="editar"
-        android:text="Editar perfil" />
+        android:text="Editar perfil"
+        android:background="@color/rosa_logo"
+        />
 </RelativeLayout>

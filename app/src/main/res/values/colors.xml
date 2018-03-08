@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
     <color name="text_color">#250054</color>
+    <color name="logo_azul">#222fE2</color>
+    <color name="rosa_logo">#FA58AC</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="fondo_azul">#E3F2FD</color>
 </resources>

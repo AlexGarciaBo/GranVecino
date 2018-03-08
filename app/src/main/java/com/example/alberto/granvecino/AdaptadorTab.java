@@ -29,8 +29,8 @@ public class AdaptadorTab extends BaseAdapter {
             vista=inflater.inflate(R.layout.tablon_element_list,null);
         }
         TextView nombre=(TextView)vista.findViewById(R.id.nombreTV);
-        TextView apellidos=(TextView)vista.findViewById(R.id.apellidosTV);
-        TextView edad=(TextView)vista.findViewById(R.id.edadTV);
+        //TextView apellidos=(TextView)vista.findViewById(R.id.apellidosTV);
+        //TextView edad=(TextView)vista.findViewById(R.id.edadTV);
         TextView trabajo=(TextView)vista.findViewById(R.id.trabajoTV);
         TextView desc=(TextView)vista.findViewById(R.id.descripcionTV);
         TextView tipo=(TextView)vista.findViewById(R.id.TipoTV);

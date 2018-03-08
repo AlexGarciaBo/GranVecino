@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alberto.granvecino.EditarPerfil">
+    tools:context="com.example.alberto.granvecino.EditarPerfil"
+    android:background="@color/fondo_azul">
 
     <EditText
         android:id="@+id/etNombre"
@@ -38,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="confirmar"
+        android:background="@color/rosa_logo"
         android:text="Confirmar" />
 
     <EditText

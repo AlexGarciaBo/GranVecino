@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alberto.granvecino.Solicitar">
+    tools:context="com.example.alberto.granvecino.Solicitar"
+    android:background="@color/fondo_azul">
 
     <EditText
         android:id="@+id/descET"
@@ -19,7 +20,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/rosa_logo"/>
 
     <TextView
         android:id="@+id/textView"
@@ -34,7 +36,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintVertical_bias="0.135"
+        android:textSize="30dp"
+        android:textColor="@color/logo_azul"
+        />
 
     <Button
         android:id="@+id/ofrecerBTN"
@@ -50,7 +55,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descET"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@color/rosa_logo"
+        />
 
     <EditText
         android:id="@+id/trabajoET"
@@ -68,5 +75,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:textColorHint="@color/rosa_logo"/>
 </android.support.constraint.ConstraintLayout>
